@@ -1,1 +1,2 @@
 1. php symphony new project name   - Create new project
+2. php bin/console cache:clear --env=prod clear the cache
