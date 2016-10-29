@@ -1,3 +1,5 @@
 1. php symphony new project name   - Create new project
 2. php bin/console cache:clear --env=prod clear the cache
 3. $kernel->loadClassCache() comment this line fron app.php  disable cache
+4. php bin/console security:check  - check for security issues
+5. http://localhost/wb-builder/web/config.php   - Checking Symfony Application Configuration
