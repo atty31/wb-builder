@@ -8,12 +8,12 @@
                     <div class="widget footer-widgets tags-widget">
                         <h2>Popular Tags</h2>
                         <ul class="tag-list">
-                            <li><a href="#">web design</a></li>
-                            <li><a href="#">coding</a></li>
-                            <li><a href="#">wordpress</a></li>
-                            <li><a href="#">php</a></li>
-                            <li><a href="#">photography</a></li>
-                            <li><a href="#">html5</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">web design</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">coding</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">wordpress</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">php</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">photography</a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}">html5</a></li>
                         </ul>
                     </div>
                 </div>
@@ -24,19 +24,19 @@
                         <ul class="tweet-list">
                             <li>
                                 <p>
-                                    <a href="#" class="autor">@premiumlayers </a> Thanks for the head up! :) <a href="#">http://support.envato.com</a> was very helpful
+                                    <a href="{{ app.request.getBaseURL() }}" class="autor">@premiumlayers </a> Thanks for the head up! :) <a href="{{ app.request.getBaseURL() }}">http://support.envato.com</a> was very helpful
                                     <span>3 days ago </span>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <a href="#" class="autor">@envato </a><a href="#">http://support.envato.com</a>
+                                    <a href="{{ app.request.getBaseURL() }}" class="autor">@envato </a><a href="#">http://support.envato.com</a>
                                     <span>4 days ago </span>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <a href="#" class="autor">@premiumlayers </a>Well, that’s awesome thing
+                                    <a href="{{ app.request.getBaseURL() }}" class="autor">@premiumlayers </a>Well, that’s awesome thing
                                     <span>5 days ago </span>
                                 </p>
                             </li>
@@ -48,14 +48,14 @@
                     <div class="widget footer-widgets flickr-widget">
                         <h2>Flickr Gallery</h2>
                         <ul class="flickr-list">
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr1.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr2.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr3.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr4.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr5.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr6.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr7.jpg"></a></li>
-                            <li><a href="#"><img alt="" src="upload/flickr/flickr8.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr1.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr2.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr3.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr4.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr5.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr6.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr7.jpg"></a></li>
+                            <li><a href="{{ app.request.getBaseURL() }}"><img alt="" src="{{ app.request.getBaseURL() }}/upload/flickr/flickr8.jpg"></a></li>
                         </ul>
                     </div>
                 </div>
