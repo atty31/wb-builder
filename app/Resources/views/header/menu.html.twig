@@ -1,0 +1,19 @@
+<ul class="main-menu">
+
+    <li class="drop"><a class="active" href="{{ app.request.getBaseURL() }}"><i class="fa fa-home"></i>home</a></li>
+    <li class="drop"><a href="#"><i class="fa fa-cog"></i>my account</a>
+        <ul class="drop-down">
+            <li><a href="../index.html">Log in</a></li>
+            <li><a href="../skin2/index.html">Log out</a></li>
+        </ul>
+    </li>
+    <li class="drop"><a href="{{ app.request.getBaseURL() }}/portfolio-2col.html"><i class="fa fa-briefcase"></i>Choose Website</a>
+        <ul class="drop-down">
+            <li><a href="{{ app.request.getBaseURL() }}/portfolio-2col.html">Prezentation</a></li>
+            <li><a href="{{ app.request.getBaseURL() }}/portfolio-3col.html">Blog</a></li>
+            <li><a href="{{ app.request.getBaseURL() }}/single-project.html">Web shop</a></li>
+        </ul>
+    <li><a href="about.html"><i class="fa fa-user"></i>about us</a></li>
+    <li><a href="{{ app.request.getBaseURL() }}/contact"><i class="fa fa-envelope"></i>contact us</a></li>
+
+</ul>

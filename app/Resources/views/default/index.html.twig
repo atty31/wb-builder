@@ -2,70 +2,8 @@
 
 {% block body %}
 <!-- Social list box -->
-<div class="sidebar-section white-box">
-    <div class="social-box">
-        <h2>Social Icons</h2>
-        <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-        </ul>
-    </div>
-</div>
 
-<!-- Recent post box -->
-<div class="sidebar-section white-box">
-    <div class="recent-post-box">
-        <h2>Recent Posts</h2>
-        <ul class="recent-list">
-            <li>
-                <img alt="" src="upload/thumb1.jpg">
-                <p><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></p>
-            </li>
-            <li>
-                <img alt="" src="upload/thumb2.jpg">
-                <p><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></p>
-            </li>
-            <li>
-                <img alt="" src="upload/thumb3.jpg">
-                <p><a href="#">This is Photoshop's version  of Lorem Ipsum.</a></p>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<!-- contact-info box -->
-<div class="sidebar-section white-box">
-    <div class="contact-info-box">
-        <h2>Contact Us</h2>
-        <ul>
-            <li>
-                <i class="fa fa-phone"></i> 9930 1234 5679
-            </li>
-            <li>
-                <i class="fa fa-envelope"></i> <a href="#">contact@yourdomain.com</a>
-            </li>
-            <li>
-                <i class="fa fa-home"></i> street address example
-            </li>
-        </ul>
-    </div>
-</div>
-
-<!-- text box -->
-<div class="sidebar-section white-box">
-    <div class="text-box">
-        <h2>Text widget</h2>
-        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida . Aenean sollicitudin, lorem quis bibendum</p>
-        <p>auctor, nisi elit consequat ipsum, nec sagittis sem nibh id</p>
-    </div>
-</div>
-
-</div>
-<!-- End Sidebar -->
 
 <!-- content
     ================================================== -->
@@ -76,19 +14,19 @@
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img alt="" src="upload/flex/1.jpg" />
+                    <img alt="" src="{{ app.request.getBaseURL() }}/upload/flex/1.jpg" />
                     <p class="flex-caption">We design &amp; develop awesome website and smart Applications..</p>
                 </li>
                 <li>
-                    <img alt="" src="upload/flex/2.jpg" />
+                    <img alt="" src="{{ app.request.getBaseURL() }}/upload/flex/2.jpg" />
                     <p class="flex-caption">We design &amp; develop awesome website and smart Applications..</p>
                 </li>
                 <li>
-                    <img alt="" src="upload/flex/3.jpg" />
+                    <img alt="" src="{{ app.request.getBaseURL() }}/upload/flex/3.jpg" />
                     <p class="flex-caption">We design &amp; develop awesome website and smart Applications..</p>
                 </li>
                 <li>
-                    <img alt="" src="upload/flex/4.jpg" />
+                    <img alt="" src="{{ app.request.getBaseURL() }}/upload/flex/4.jpg" />
                     <p class="flex-caption">We design &amp; develop awesome website and smart Applications..</p>
                 </li>
             </ul>
@@ -179,21 +117,21 @@
         <h2>Client Testimonials</h2>
         <ul class="bxslider triggerAnimation animated" data-animate="fadeIn">
             <li>
-                <img alt="" src="images/client.png">
+                <img alt="" src="{{ app.request.getBaseURL() }}/images/client.png">
                 <div class="message-content">
                     <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare.</p>
                     <h6>John Smith, CEO at <span>Envato</span></h6>
                 </div>
             </li>
             <li>
-                <img alt="" src="images/client.png">
+                <img alt="" src="{{ app.request.getBaseURL() }}/images/client.png">
                 <div class="message-content">
                     <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare.</p>
                     <h6>John Smith, CEO at <span>Envato</span></h6>
                 </div>
             </li>
             <li>
-                <img alt="" src="images/client.png">
+                <img alt="" src="{{ app.request.getBaseURL() }}/images/client.png">
                 <div class="message-content">
                     <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare.</p>
                     <h6>John Smith, CEO at <span>Envato</span></h6>

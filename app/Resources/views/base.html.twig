@@ -5,9 +5,9 @@
         <div id="container" class="container">
             <div id="sidebar">
                 {% include 'header/header.html.twig' %}
-                {% block body %}{% endblock %}
-                {% include 'footer/footer.html.twig' %}
             </div>
+            {% block body %}{% endblock %}
+            {% include 'footer/footer.html.twig' %}
         </div>
         {% include 'footer/js.html.twig' %}
     </body>
