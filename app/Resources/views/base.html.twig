@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
+    {% include 'header/head.html.twig' %}
     <body>
-        {% block header %} {% endblock %}
-        {% block body %}{% endblock %}
-        {% block footer %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div id="container" class="container">
+            <div id="sidebar">
+                {% include 'header/header.html.twig' %}
+                {% block body %}{% endblock %}
+                {% include 'footer/footer.html.twig' %}
+            </div>
+        </div>
+        {% include 'footer/js.html.twig' %}
     </body>
 </html>
