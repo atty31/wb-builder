@@ -27,16 +27,17 @@ class ContactController extends Controller
         $contact = new Contact();
 
         $form = $this->createFormBuilder($contact)
-            ->add('name', TextType::class)
-            ->add('email', TextType::class)
-            ->add('message', TextareaType::class, array(
-                'attr' => array('class' => 'tinymce'),
-            ))
-            ->add('save', SubmitType::class, array('label' => 'Send Message'))
+            ->setAction($this->generateUrl('test'))
             ->getForm();
 
         return $this->render('contact/content.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+    /**
+     * @Route("/contact/test/", name="test").
+     */
+    public function testAction(){
+        echo 1; exit();
     }
 }
